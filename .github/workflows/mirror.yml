@@ -49,4 +49,4 @@ jobs:
     - name: Deploy new image to EKS
       run: |
         kubectl set image deployment/mario \
-        myapp=$ECR_REGISTRY/$ECR_REPO:$IMAGE_TAG
+        mario=$ECR_REGISTRY/$ECR_REPO:$IMAGE_TAG
