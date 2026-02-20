@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mario
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mario
+  template:
+    metadata:
+      labels:
+        app: mario
+    spec:
+      containers:
+      - name: mario
+        image: 203071037199.dkr.ecr.ap-south-1.amazonaws.com/mario:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
