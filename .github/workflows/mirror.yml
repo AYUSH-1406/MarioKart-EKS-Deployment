@@ -2,8 +2,8 @@ name: Mirror and Deploy to EKS
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 3 * * *"   # Optional: runs daily at 3 AM
+  # schedule:
+  #   - cron: "0 3 * * *"   # Optional: runs daily at 3 AM
 
 env:
   AWS_REGION: ap-south-1
